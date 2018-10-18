@@ -1,0 +1,12 @@
+CREATE TABLE libraries(
+ id INT(4) AUTO_INCREMENT,
+ address VARCHAR(10),
+ name VARCHAR(10),
+ phone INT(10),
+ PRIMARY KEY(id)
+);
+INSERT INTO libraries(address,name,phone) VALUES('address1', 'name1',1212121212);
+
+CREATE PROCEDURE libraryCreateDelete(
+IN _id INT 
+)
